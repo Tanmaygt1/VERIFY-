@@ -42,7 +42,7 @@ const SessionsTable = ({
   const [sortDirection, setSortDirection] = useState<"asc" | "desc">("desc");
 
   const sortedAndFilteredSessions = useMemo(() => {
-    let filtered = [...sessions];
+    const filtered = [...sessions];
 
     return filtered.sort((a, b) => {
       const aValue = a[sortField as keyof typeof a];

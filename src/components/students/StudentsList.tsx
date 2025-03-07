@@ -55,7 +55,7 @@ export default function StudentsList() {
         // Process each student
         for (const userDoc of querySnapshot.docs) {
           const userData = userDoc.data();
-          let totalSessions = courseLectures.length;
+          const totalSessions = courseLectures.length;
           let presentSessions = 0;
 
           // Check each lecture for attendance

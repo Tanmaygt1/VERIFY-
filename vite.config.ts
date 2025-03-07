@@ -16,7 +16,7 @@ export default defineConfig({
     }),
     tempo(),
   ],
-  base: "/VERIFY/",
+  base: "./",  // Updated base path for relative URLs
   build: {
     outDir: "dist",
   },
@@ -26,7 +26,6 @@ export default defineConfig({
     },
   },
   server: {
-    // @ts-ignore
     allowedHosts: process.env.TEMPO === "true" ? true : undefined,
   },
 });

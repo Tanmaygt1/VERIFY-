@@ -30,7 +30,7 @@ const ManageSessions = () => {
 
   const sortedAndFilteredSessions = useMemo(() => {
     if (!sessions) return [];
-    let filtered = [...sessions];
+    const filtered = [...sessions];
 
     return filtered.sort((a, b) => {
       const aValue = a[sortField as keyof typeof a];
